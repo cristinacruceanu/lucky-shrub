@@ -1,10 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background-color:#FFFFFF;
-  font-family:'Montserrat', sans-serif ;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  margin-left: 5%;
-  margin-right: 5%;
+  font-family:'Manrope', sans-serif ;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  padding-bottom: 80px;
+}
+
+article {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+}
+
+footer div {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
 }
 
 h1 {
@@ -15,33 +44,94 @@ h2 {
   font-size: 2rem;
 }
 
+/* HEADER */
+header {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 header > img {
   display: block;
   margin-left:auto;
   margin-right: auto;
+  max-height:90px;
 }
 
 nav ul {
   list-style: none;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 nav li {
-  display: inline-block;
+display: inline-block;
+padding:3px;
+color:#000;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+text-decoration: none;
+line-height: 150%;
 }
 
-section {
+.home {
+  font-weight: 700;
+}
+
+/* HERO BANNER */
+.hero-banner {
+  min-height: calc(100vh - 93px);
+}
+
+.hero-banner article {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-article {
-  flex: 1;
+.banner {
+  position: absolute;
+  z-index: -1;
+  height: calc(100vh - 93px);
+  overflow: hidden;
 }
 
-footer {
-  display:flex;
+.hero-banner-text {
+  padding: 0 24px;
+  color: #FFFFFF;
+  text-align: center;
 }
 
-footer div {
-  flex: 1;
+.tablet-banner, .desktop-banner {
+  display: none;
+}
+
+.img-overlay {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.40) 50%, rgba(0, 0, 0, 0.50) 100%);
+}
+
+.mobile-banner {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+/* TABLET MODE */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+/* DESKTOP MODE */
+@media screen and (min-width: 1024px) {
+  h1 {
+      font-size: 5rem;
+    }
 }
