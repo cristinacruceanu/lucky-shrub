@@ -16,10 +16,6 @@ section {
   padding-bottom: 80px;
 }
 
-article {
-  flex: 1;
-}
-
 footer {
   display: flex;
 }
@@ -46,15 +42,15 @@ h2 {
 
 /* HEADER */
 header {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 header > img {
   display: block;
   margin-left:auto;
   margin-right: auto;
-  max-height:90px;
+  max-height:70px;
 }
 
 nav ul {
@@ -96,16 +92,6 @@ line-height: 150%;
   overflow: hidden;
 }
 
-.hero-banner-text {
-  padding: 0 24px;
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.tablet-banner, .desktop-banner {
-  display: none;
-}
-
 .img-overlay {
   position: absolute;
   min-width: 100%;
@@ -119,19 +105,105 @@ line-height: 150%;
   height: auto;
 }
 
+.tablet-banner,
+.desktop-banner {
+  display: none;
+}
 
+.hero-banner-text {
+  padding: 0 24px;
+  color: #FFFFFF;
+  text-align: center;
+}
 
+button {
+background-color: #198754;
+color: white;
+border-style:none;
+border-radius: 4px;
+padding:10px 30px 10px 30px;
+font-size: 14px;
+font-style: normal;
+line-height: 150%;
+font-family: "Manrope", sans-serif;
+margin-top: 16px;
+}
 
+.features {
+  flex-direction: column;
+
+}
+.content-about-us {
+display: flex;
+flex-direction: column;
+align-items: center;
+border:  1px solid #E9E9EA;
+border-radius: 10px;
+margin: 20px;
+padding: 30px;
+
+}
+
+.content-about-us h2 {
+  font-family: "Manrope", sans-serif;
+  text-align: left;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    color: #000;
+}
+
+.content-about-us p {
+font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #000;
+}
+
+.img-about-us {
+ width: 100%;
+ height: fixed;
+  border-radius: 10px;
+}
 /* TABLET MODE */
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 4rem;
   }
+    .mobile-banner,
+    .desktop-banner {
+      display: none;
+    }
 }
 
 /* DESKTOP MODE */
 @media screen and (min-width: 1024px) {
+
+  body {
+      background-color: #FFFFFF;
+      font-family: 'Manrope', sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    section {
+      display: flex;
+      padding-bottom: 80px;
+    }
+
+    article {
+      flex: 1;
+    }
+
+
   h1 {
       font-size: 5rem;
     }
+ .mobile-banner, .tablet-banner {
+          display: none;
+        }
 }
