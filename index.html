@@ -11,71 +11,112 @@
     />
     <meta name="author" content="Lucky Shrub" />
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <img src="lucky-shrub.png" />
+      <img src="lucky-shrub.png" alt="logo-image" />
     </header>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li class="home"><a href="index.html">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
       </ul>
     </nav>
     <main>
-      <section>
+      <section class="hero-banner">
         <article>
-          <h1>Heading 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-            libero facilis ex ab, corrupti eveniet, rem perspiciatis fuga
-            tenetur minus, obcaecati sequi omnis repellat voluptatem voluptas
-            molestias? Laboriosam, repudiandae modi!
-          </p>
+          <figure class="banner">
+            <div class="img-overlay"></div>
+            <picture>
+              <source
+                srcset="./assets/images/desktop-banner.jpg"
+                media="(min-width: 990px)"
+              />
+              <source
+                srcset="./assets/images/tablet-banner.jpg"
+                media="(min-width: 750px)"
+              />
+              <img
+                class="img-banner"
+                srcset="./assets/images/mobile-banner.jpg"
+                alt="hero banner"
+              />
+            </picture>
+          </figure>
+          <div class="hero-banner-text">
+            <h1>Transform Your Garden into a Vibrant Paradise</h1>
+            <p>
+              Enhance your garden with bespoke designs and a curated selection
+              of plants from our nursery.
+            </p>
+            <button>Get Started Now</button>
+          </div>
         </article>
       </section>
-      <section>
-        <article>
-          <h2>Heading 2</h2>
+      <section class="features">
+        <article class="card" id="about-us">
+          <figure>
+            <img
+              class="card-img"
+              src="./assets/images/about-us-img.jpg"
+              alt="hands holding plant"
+            />
+          </figure>
+          <h2>About Us</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-            libero facilis ex ab, corrupti eveniet, rem perspiciatis fuga
-            tenetur minus, obcaecati sequi omnis repellat voluptatem voluptas
-            molestias? Laboriosam, repudiandae modi!
+            At Lucky Shrub, we blend creativity and expertise to transform
+            outdoor spaces into stunning landscapes. We offer top-quality plants
+            from our nursery to ensure every project thrives.
           </p>
+          <a href="#about-us" class="link">Read more</a>
         </article>
-        <article>
-          <h2>Heading 2</h2>
+        <article class="card" id="services">
+          <figure>
+            <img
+              class="card-img"
+              src="./assets/images/services-img.jpg"
+              alt="gardening tools"
+            />
+          </figure>
+          <h2>Services</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-            libero facilis ex ab, corrupti eveniet, rem perspiciatis fuga
-            tenetur minus, obcaecati sequi omnis repellat voluptatem voluptas
-            molestias? Laboriosam, repudiandae modi!
+            Bespoke garden design and creation, maintenance and landscaping,
+            plus a diverse selection of nursery plants.
           </p>
+          <a href="#services" class="link">Contact us</a>
         </article>
-        <article>
-          <h2>Heading 2</h2>
+        <article class="card" id="gallery">
+          <figure>
+            <img
+              class="card-img"
+              src="./assets/images/gallery-img.jpg"
+              alt="landscape design"
+            />
+          </figure>
+          <h2>Gallery</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-            libero facilis ex ab, corrupti eveniet, rem perspiciatis fuga
-            tenetur minus, obcaecati sequi omnis repellat voluptatem voluptas
-            molestias? Laboriosam, repudiandae modi!
+            From serene backyard retreats to lush commercial landscapes, our
+            gallery showcases the beauty and craftmanship we bring to every
+            project.
           </p>
+          <a href="#services" class="link">View more</a>
         </article>
       </section>
     </main>
     <footer>
       <div>
-        <img src="lucky-shrub.png" />
+        <img src="./assets/images/small-logo.png" class="logo" />
       </div>
-      <div>
-        <p>Copyright Lucky Shrub</p>
+      <div class="copyright">
+        <p>@Copyright Lucky Shrub</p>
       </div>
     </footer>
   </body>
