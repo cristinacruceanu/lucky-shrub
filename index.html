@@ -35,21 +35,21 @@
         <article>
           <figure class="banner">
             <div class="img-overlay"></div>
-            <img
-              class="mobile-banner"
-              src="./assets/images/mobile-banner.jpg"
-              alt="mobile banner"
-            />
-            <img
-              class="tablet-banner"
-              src="./assets/images/tablet-banner.jpg"
-              alt="tablet banner"
-            />
-            <img
-              class="desktop-banner"
-              src="./assets/images/desktop-banner.jpg"
-              alt="desktop banner"
-            />
+            <picture>
+              <source
+                srcset="./assets/images/desktop-banner.jpg"
+                media="(min-width: 990px)"
+              />
+              <source
+                srcset="./assets/images/tablet-banner.jpg"
+                media="(min-width: 750px)"
+              />
+              <img
+                class="img-banner"
+                srcset="./assets/images/mobile-banner.jpg"
+                alt="hero banner"
+              />
+            </picture>
           </figure>
           <div class="hero-banner-text">
             <h1>Transform Your Garden into a Vibrant Paradise</h1>
@@ -59,66 +59,64 @@
             </p>
             <button>Get Started Now</button>
           </div>
-
         </article>
       </section>
       <section class="features">
-        <article id="about-us">
-          <div class="content-about-us">
-            <figure>
-              <img
-                class="img-about-us"
-                src="./assets/images/about-us-img.jpg"
-                alt="hands holding plant"
-              />
-            </figure>
-            <h2>About Us</h2>
-            <p>
-             At Lucky Shrub, we blend creativity and expertise to transform outdoor spaces into stunning landscapes. We offer top-quality plants from our nursery to ensure every project thrives.
-            <br>
-             <a href="#about-us">Read more about us...</a>
-            </p>
-          </div>
+        <article class="card" id="about-us">
+          <figure>
+            <img
+              class="card-img"
+              src="./assets/images/about-us-img.jpg"
+              alt="hands holding plant"
+            />
+          </figure>
+          <h2>About Us</h2>
+          <p>
+            At Lucky Shrub, we blend creativity and expertise to transform
+            outdoor spaces into stunning landscapes. We offer top-quality plants
+            from our nursery to ensure every project thrives.
+          </p>
+          <a href="#about-us" class="link">Read more</a>
         </article>
-        <article id="services">
-          <div class="content-services">
-             <figure>
-              <img
-                class="img-services"
-                src="./assets/images/services-img.jpg"
-                alt="gardening tools"
-              />
-            </figure>
-            <h2>Services</h2>
-            <p>
-              Bespoke garden design and creation, maintenance and landscaping, plus a diverse selection of nursery plants.
-            </p>
-            <p>Contact us today for a personalized offer - Your perfect outdoor space awaits</p>
-          </div>
+        <article class="card" id="services">
+          <figure>
+            <img
+              class="card-img"
+              src="./assets/images/services-img.jpg"
+              alt="gardening tools"
+            />
+          </figure>
+          <h2>Services</h2>
+          <p>
+            Bespoke garden design and creation, maintenance and landscaping,
+            plus a diverse selection of nursery plants.
+          </p>
+          <a href="#services" class="link">Contact us</a>
         </article>
-        <article id="gallery">
-          <div class="content-gallery">
-             <figure>
-              <img
-                class="img-gallery"
-                src="./assets/images/gallery-img.jpg"
-                alt="landscape design"
-              />
-            </figure>
+        <article class="card" id="gallery">
+          <figure>
+            <img
+              class="card-img"
+              src="./assets/images/gallery-img.jpg"
+              alt="landscape design"
+            />
+          </figure>
           <h2>Gallery</h2>
           <p>
-            From serene backyard retreats to lush commercial landscapes, our gallery showcases the beauty and craftmanship we bring to every project.
+            From serene backyard retreats to lush commercial landscapes, our
+            gallery showcases the beauty and craftmanship we bring to every
+            project.
           </p>
-          </div>
+          <a href="#services" class="link">View more</a>
         </article>
       </section>
     </main>
     <footer>
-      <div class="logo">
-        <img src="lucky-shrub.png" />
+      <div>
+        <img src="./assets/images/small-logo.png" class="logo" />
       </div>
       <div class="copyright">
-        <p>Copyright Lucky Shrub</p>
+        <p>@Copyright Lucky Shrub</p>
       </div>
     </footer>
   </body>
