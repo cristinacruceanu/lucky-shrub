@@ -233,12 +233,30 @@ a.link {
     margin: 0;
   }
 }
-
 /* DESKTOP MODE */
 @media screen and (min-width: 1024px) {
+  .banner,
+  footer {
+    max-width: calc(100vw - 32px);
+  }
   .hero-banner-text {
     max-width: 800px;
     padding: 0;
+  }
+
+  button:hover {
+    cursor: pointer;
+    animation: btn 1s forwards;
+  }
+
+  @keyframes btn {
+    from {
+      background-color: #198754;
+    }
+    to {
+      background-color: #035831;
+      letter-spacing: 1px;
+    }
   }
 
   .features {
@@ -251,6 +269,15 @@ a.link {
 
   .card {
     flex: 1;
+  }
+
+  .card img {
+    transform: scale(1);
+    transition: 0.5s all;
+  }
+
+  .card:hover img {
+    transform: scale(1.1);
   }
 
   h1 {
